@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>El Principito - Capítulo II</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilopag2.css' %}">
+  </head>
+  <body>
+
+    <h1>El Principito</h1>
+    <h2>Capítulo <span>II</span></h2>
+
+    <p id="especial">La primera noche me dormí sobre la arena, a unas mil millas de distancia del lugar habitado más próximo. Estaba más aislado que un náufrago en una balsa en medio del océano. Imagínense, pues, mi sorpresa cuando al amanecer me despertó una extraña vocecita que decía:
+
+ <p class="Principito"> — ¡Por favor... píntame un cordero!</p>
+
+<p class="narrador">—¿Eh?</p>
+
+<p class="Principito">—¡Píntame un cordero!</p>
+
+<p class="narrador">Me puse en pie de un salto como herido por el rayo. Me froté los ojos. Miré a mi alrededor. Vi a un extraordinario muchachito que me miraba gravemente. Ahí tienen el mejor retrato que más tarde logré hacer de él, aunque mi dibujo, ciertamente es menos encantador que el modelo. Pero no es mía la culpa.</p>
+
+    <p id = "nosequeponeraquilaverdad">Las personas mayores me desanimaron de mi carrera de pintor a la edad de seis años y no había aprendido a dibujar otra cosa que boas cerradas y boas abiertas.</p>
+
+    <p class="principito">—¡No importa —me respondió—, píntame un cordero!</p>
+<p class="narrador">Como nunca había dibujado un cordero, rehíce para él uno de los dos únicos dibujos que yo era capaz de realizar: el de la serpiente boa cerrada. Y quedé estupefacto cuando oí decir al hombrecito:</p>
+<p class="principito">— ¡No, no! Yo no quiero un elefante en una serpiente. La serpiente es muy peligrosa y el elefante ocupa mucho sitio. En mi tierra es todo muy pequeño. Necesito un cordero. Píntame un cordero.</p>
+<p class="resaltar">dibuje un cordero</p>
+    <img src="{% static 'img/img03.PNG' %}" alt="imagen capitulo 2">
+<p id="especial">Lo miró atentamente y dijo:</p>
+    <p class="narrador">Volví a dibujar.</p>
+    <img src="{% static 'img/img04.PNG' %}" alt="imagen2 capitulo 2">
+    
+       <p id = "especial"> Mi amigo sonrió dulcemente, con indulgencia.</p>
+<p class = "principito">—¿Ves? Esto no es un cordero, es un carnero. Tiene Cuernos…</p>
+
+<p id="narrador">Rehíce nuevamente mi dibujo:</p>
+<img src="{% static 'img/img05.PNG' %}" alt="imagen3 capitulo 2">
+<p id="especial">Fue rechazado igual que los anteriores.</p>
+    <p class = "principito">—Este es demasiado viejo. Quiero un cordero que viva mucho tiempo.</p>
+<p class = "narrador">Falto ya de paciencia y deseoso de comenzar a desmontar el motor, garrapateé rápidamente este dibujo:</p>
+<img src="{% static 'img/img06.PNG' %}" alt="imagen4 capitulo 2">
+    <p id ="especial">Se lo enseñé, y le agregué: </p>
+<p class = "narrador">—Esta es la caja. El cordero que quieres está adentro. Con gran sorpresa mía el rostro de mi joven juez se iluminó:</p>
+<p class = "principito">—¡Así es como yo lo quería! ¿Crees que sea necesario mucha hierba para este cordero?</p>
+<p class = "narrador">—¿Por qué?</p>
+<p class = "principito">—Porque en mi tierra es todo tan pequeño…</p>
+<p id = "especial">Se inclinó hacia el dibujo y exclamó:</p>
+<p class = "principito">—¡Bueno, no tan pequeño…! Está dormido…</p>
+<p class="narrador">Y así fue como conocí al principito.</p>
+
+    <table>
+      <tr>
+        <td>Volver al <span><a href="{% url 'pag1elPrincipito' %}">Capítulo I</a></span></td>
+        <td>sig. <a href="{% url 'pagPrincipal' %}">Página</a></td>
+      </tr>
+    </table>
+
+  </body>
+</html>

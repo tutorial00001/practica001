@@ -1,0 +1,70 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: contain;
+    min-height: 100vh;
+    background-color: #F8F2E5; 
+    margin: 0;
+    
+}
+p {
+    color: rgb(8, 0, 255);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+   color: red;
+   text-align: center;
+   font-size: 3em;
+   text-transform: uppercase;
+   
+}
+h2, p{
+    text-align: left;
+    font-size: 2m;
+    margin: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    color: blue;
+}
+h2 span {
+    color: red;
+}
+p span {
+    color: rgb(0, 255, 21);
+}
+table tr td * a {
+    color: red;
+}
+ span.resaltar{
+color: yellow;
+font-size: 40px;
+}
+ .destacado {
+ color: rgb(111, 111, 111);
+}
+p.resaltar{
+    color: orange;
+    font-size: 2em;
+}
+#especial {
+    font-weight: 700;
+    color: black;
+}
+#nosequeponeraquilaverdad {
+    color: gray;
+    font-size: 10px;
+}
+.principito {
+    color: #064b01;
+}
+.narrador {
+color: #26547C;
+}

@@ -1,0 +1,99 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biblioteca — Página principal</title>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/estilopag3.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <div class="name">Biblioteca</div>
+          <div class="sub">Descubre tu próxima lectura</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#">Categorías</a></li>
+          <li><a href="#">Autores</a></li>
+          <li><a href="#">Acerca</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Encuentra libros que te inspiren</h1>
+        <p>Explora novedades, bestsellers y recomendaciones por género.</p>
+
+        <div class="search">
+          <input type="search" placeholder="Buscar..." />
+          <button>Buscar</button>
+        </div>
+      </div>
+
+      <aside class="highlight">
+        <small>Destacado</small>
+        <h2>La biblioteca de medianoche</h2>
+        <p>Historia sobre segundas oportunidades y universos paralelos.</p>
+        <a href="#" class="btn">Leer reseña</a>
+      </aside>
+    </section>
+
+    <h2 class="section-title">Populares</h2>
+
+<main class="grid">
+  <article class="card">
+    <a href="{% url 'pagPrincipal' %}">
+      <div class="cover">El Principito</div>
+      <div class="meta">
+        <div class="title">El Principito</div>
+        <div class="author">Antoine de Saint-Exupéry</div>
+      </div>
+    </a>
+  </article>
+</main>
+
+
+      <article class="card">
+        <div class="cover">1984</div>
+        <div class="meta">
+          <div class="title">1984</div>
+          <div class="author">George Orwell</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover">Cien años</div>
+        <div class="meta">
+          <div class="title">Cien años de soledad</div>
+          <div class="author">Gabriel García Márquez</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover">Sapiens</div>
+        <div class="meta">
+          <div class="title">Sapiens</div>
+          <div class="author">Yuval Noah Harari</div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      © <span id="year"></span> — Biblioteca
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
